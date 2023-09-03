@@ -1,0 +1,17 @@
+CREATE TABLE billTable(
+    id INTEGER PRIMARY KEY NOT NULL,
+    name TEXT NOT NULL
+);
+
+getAllBill:
+SELECT * FROM billTable;
+
+insertBill:
+INSERT INTO billTable(id, name)
+VALUES (id, name);
+
+updateBillById:
+UPDATE billTable SET name = :name WHERE id = :id;
+
+deleteBillById:
+DELETE FROM billTable WHERE id = :id;
